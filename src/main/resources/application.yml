@@ -1,0 +1,16 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: admin-server
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://10.100.2.109:18001/eureka/
+
+management:
+  security:
+    enabled: false
